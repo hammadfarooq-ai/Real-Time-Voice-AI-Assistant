@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Voice Agent Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 700px; margin: auto; }
+    button { padding: 12px 18px; font-size: 16px; border-radius: 8px; }
+    #status { margin-top: 12px; }
+    #transcript, #reply { margin-top: 12px; padding: 10px; border-radius: 8px; background:#f4f4f4; }
+  </style>
+</head>
+<body>
+  <h1>Voice Agent (Demo)</h1>
+  <p>Press <strong>Start</strong>, speak, and you'll get a spoken reply.</p>
+
+  <button id="btnStart">Start Listening</button>
+  <button id="btnStop" disabled>Stop</button>
+
+  <div id="status">Status: <span id="statusText">idle</span></div>
+
+  <div id="transcript"><strong>User:</strong> <span id="userText">—</span></div>
+  <div id="reply"><strong>Assistant:</strong> <span id="assistantText">—</span></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
